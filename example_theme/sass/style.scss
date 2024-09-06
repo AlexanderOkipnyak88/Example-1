@@ -1,0 +1,191 @@
+/*!
+Theme Name: Lemming Rammtechnik
+Theme URI: http://underscores.me/
+Author: Agenturro
+Author URI: https://agenturro.co
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Light.woff2') format('woff2'),
+        url('fonts/Poppins-Light.woff') format('woff'),
+        url('fonts/Poppins-Light.ttf') format('truetype'),
+        url('fonts/Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-LightItalic.woff2') format('woff2'),
+        url('fonts/Poppins-LightItalic.woff') format('woff'),
+        url('fonts/Poppins-LightItalic.ttf') format('truetype'),
+        url('fonts/Poppins-LightItalic.svg#Poppins-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.woff2') format('woff2'),
+        url('fonts/Poppins-Regular.woff') format('woff'),
+        url('fonts/Poppins-Regular.ttf') format('truetype'),
+        url('fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Italic.woff2') format('woff2'),
+        url('fonts/Poppins-Italic.woff') format('woff'),
+        url('fonts/Poppins-Italic.ttf') format('truetype'),
+        url('fonts/Poppins-Italic.svg#Poppins-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Medium.woff2') format('woff2'),
+        url('fonts/Poppins-Medium.woff') format('woff'),
+        url('fonts/Poppins-Medium.ttf') format('truetype'),
+        url('fonts/Poppins-Medium.svg#Poppins') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-MediumItalic.woff2') format('woff2'),
+        url('fonts/Poppins-MediumItalic.woff') format('woff'),
+        url('fonts/Poppins-MediumItalic.ttf') format('truetype'),
+        url('fonts/Poppins-MediumItalic.svg#Poppins-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('fonts/Poppins-SemiBold.woff') format('woff'),
+        url('fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/Poppins-SemiBoldItalic.woff') format('woff'),
+        url('fonts/Poppins-SemiBoldItalic.ttf') format('truetype'),
+        url('fonts/Poppins-SemiBoldItalic.svg#Poppins-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.woff2') format('woff2'),
+        url('fonts/Poppins-Bold.woff') format('woff'),
+        url('fonts/Poppins-Bold.ttf') format('truetype'),
+        url('fonts/Poppins-Bold.svg#Poppins') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-BoldItalic.woff2') format('woff2'),
+        url('fonts/Poppins-BoldItalic.woff') format('woff'),
+        url('fonts/Poppins-BoldItalic.ttf') format('truetype'),
+        url('fonts/Poppins-BoldItalic.svg#Poppins-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.woff2') format('woff2'),
+        url('fonts/Inter-Regular.woff') format('woff'),
+        url('fonts/Inter-Regular.ttf') format('truetype'),
+        url('fonts/Inter-Regular.svg#Inter-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// Import variables and mixins.
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Alignments
+--------------------------------------------- */
+@import "utilities/alignments";

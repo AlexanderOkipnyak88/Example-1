@@ -1,0 +1,31 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/"
+        }, /*
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/"
+        }*/
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "remotefs.remote": {
+        "ottitsch": {
+            "scheme": "ftp",
+            "host": "185.166.23.68",
+            "username": "p636554",
+            "rootPath": "/html/wordpress/wp-content/themes/ottitsch"
+        },
+    }
+}

@@ -1,0 +1,33 @@
+.kama_breadcrumbs{
+    position: absolute;
+    top:calc(100% + 15px);
+    max-width: 1440px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 $desktop-padding 0;
+    max-width: 1440px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+    line-height: 1.4;
+    font-weight: 500;
+    @media (max-width:1366px) {
+        padding: 0 $tablet-padding;
+    }
+    @media (max-width:767px) {
+        padding: 0 $mobile-padding;
+    }
+    span{
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.28px;
+        line-height: 1.4;
+        font-weight: 500;
+        &.kb_sep{
+            margin:0 6px 0 11px;
+        }
+    }
+}

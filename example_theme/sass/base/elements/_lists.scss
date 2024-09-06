@@ -1,0 +1,42 @@
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style-type: none;
+	margin:0;
+	padding: 0 0 0 10px;
+	li{
+		margin:0 0 12px;
+		padding: 0 0 0 20px;
+		position: relative;
+		&:before{
+			content: '';
+			width: 6px;
+			height: 6px;
+			background: $color__link;
+			position: absolute;
+			left:0;
+			top:10px;
+		}
+	}
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}

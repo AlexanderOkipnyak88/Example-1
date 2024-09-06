@@ -1,0 +1,107 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #636363;
+	border-radius: 0;
+	padding: 14px 19px;
+	font-size: 16px;
+	background: #fff;
+	line-height: 1.6;
+	outline: none;
+	border: 1px solid #EAEAEA;
+	border-radius:0;
+	width: 100%;
+	resize: none;
+	-webkit-appearance: none;
+	&:focus {
+		color: $color__text-screen;
+		border-color: #B8B8B8;
+		outline: 5px solid rgba(204, 209, 220, 0.25);
+	}
+}
+textarea{
+	border:0;
+	background: none;
+	&:focus {
+		color: $color__text-screen;
+		border: 0;
+		outline: none;
+	}
+}
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+ /* The container must be positioned relative: */
+ .custom-select {
+	position: relative;
+	width: 100%;
+  }
+  
+  .custom-select select {
+	display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+	background-color: $color__link-visited;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	width: 24px;
+	height: 24px;
+	background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuMDc5OTIgOC45MDk5N0wxMC41OTk5IDE1LjQzQzExLjM2OTkgMTYuMiAxMi42Mjk5IDE2LjIgMTMuMzk5OSAxNS40M0wxOS45MTk5IDguOTA5OTciIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K') no-repeat 0 0;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+	color: #ffffff;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+	position: absolute;
+	background-color: DodgerBlue;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+	display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+  } 
+::-webkit-input-placeholder { opacity:1 !important; }
+::-moz-placeholder { opacity:1 !important; }
+:-moz-placeholder { opacity:1 !important; }
+:-ms-input-placeholder { opacity:1 !important; }

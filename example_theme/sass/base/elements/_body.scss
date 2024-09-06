@@ -1,0 +1,22 @@
+html{
+	scroll-behavior: smooth;
+}
+body {
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+	color: $color__text-main;
+	font-family: $font__main;
+	/*animation: fadeInAnimation ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	overflow-x: hidden;*/
+}
+#wrapper{
+	width: 100%;
+	max-width: 100%;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+	@media (max-width:767px) {
+		
+	}
+}

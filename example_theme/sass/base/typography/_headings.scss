@@ -1,0 +1,135 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+h1,
+.h1 {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.2;
+	font-weight: 600;
+	color:$color__text-screen;
+	margin:0 0 33px;
+	padding-left: 32px;
+	position: relative;
+	hyphens: auto;
+	&:before{
+		content:'';
+		position: absolute;
+		top:50%;
+		left:4px;
+		border-left:8px solid $color__link;
+		height: calc(100% - 28px);
+		min-height: 58px;
+		transform: translateY(-50%);
+	}
+	@media (max-width:767px) {
+		font-size: 32px;
+		line-height: 1.4;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: 500;
+	color: $color__link-visited;
+	text-transform: uppercase;
+	letter-spacing: 0.28px;
+	margin:0 0 21px 0;
+}
+
+h6,
+.h6 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+h3,
+.h3 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 140%;
+	margin:0 0 32px;
+	position: relative;
+	color: $color__text-screen;
+	padding-left: 32px;
+	hyphens: auto;
+
+	&:before{
+		content:'';
+		position: absolute;
+		top:50%;
+		left:4px;
+		border-left:8px solid $color__link;
+		height: calc(100% - 28px);
+		min-height: 58px;
+		transform: translateY(-50%);
+	}
+}
+
+h4,
+.h4 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	margin:0 0 10px;
+	color:$color__text-screen;
+	hyphens: auto;
+}
+
+h2,
+.h2 {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.2;
+	font-weight: 600;
+	color:$color__text-screen;
+	margin:0 0 33px;
+	padding-left: 32px;
+	position: relative;
+	hyphens: auto;
+	&:before{
+		content:'';
+		position: absolute;
+		top:50%;
+		left:4px;
+		border-left:8px solid $color__link;
+		height: calc(100% - 28px);
+		min-height: 58px;
+		transform: translateY(-50%);
+	}
+	@media (max-width:767px) {
+		font-size: 32px;
+		line-height: 1.4;
+	}
+}
+
+.block-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 32px;
+	@media (max-width: 1023px) {
+		margin-bottom: 24px;
+		}
+
+	&.text-center {
+		justify-content: center;
+	}
+
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
